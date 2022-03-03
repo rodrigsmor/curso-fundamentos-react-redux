@@ -1,10 +1,12 @@
 const Aleatorio = ({ minimo, maximo }) => {
-    const numeroAleatorio =  parseInt(Math.random(minimo, maximo) *  (maximo - minimo)) + minimo;
+    const numeroAleatorio =  parseInt(Math.random() *  (maximo - minimo)) + minimo;
 
     return (
         <div>
-            <h2>Numero Aleatorio</h2>
-            <h3>{ numeroAleatorio }</h3>
+            <h2>Valor Aleatorio</h2>
+            <p><strong>Valor Mínimo: </strong> {minimo} </p>
+            <p><strong>Valor Máximo: </strong> {maximo} </p>
+            <p><strong>Valor Escolhido: </strong> {numeroAleatorio} </p>
         </div>
     );
 }
