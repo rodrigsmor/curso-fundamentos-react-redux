@@ -5,14 +5,24 @@ import Familia from './components/básicos/Familia'
 import Primeiro from './components/básicos/Primeiro';
 import Aleatorio from './components/básicos/Aleatorio';
 import Fragmento from './components/básicos/Fragmento';
-import ComParametro from './components/básicos/ComParametro'
+import ListaAlunos from './components/repetição/ListaAlunos';
+import ComParametro from './components/básicos/ComParametro';
 import FamiliaMembro from "./components/básicos/FamiliaMembro";
+import TabelaProdutos from './components/repetição/TabelaProdutos';
 
 const App = () => {
     return (
         <div className="App">
             <h1>Fundamentos do React</h1>
             <div className="Cards">
+                <Card titulo={'#07 - Desafio Repetição'} color={'#534ab2'}>
+                    <TabelaProdutos></TabelaProdutos>
+                </Card>
+
+                <Card titulo={'#06 - Repetição'} color={'#00C865'}>
+                    <ListaAlunos></ListaAlunos>
+                </Card>
+
                 <Card titulo={'#05 - Componente com filhos'} color={'#00C8F8'}>
                     <Familia sobrenome={'Silva'}>
                         <FamiliaMembro nome={'Pedro'} />
