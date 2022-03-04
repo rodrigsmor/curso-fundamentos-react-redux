@@ -5,9 +5,11 @@ import Familia from './components/básicos/Familia'
 import Primeiro from './components/básicos/Primeiro';
 import Aleatorio from './components/básicos/Aleatorio';
 import Fragmento from './components/básicos/Fragmento';
+import DiretaPai from './components/Comunicação/DiretaPai';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import ListaAlunos from './components/repetição/ListaAlunos';
+import IndiretaPai from './components/Comunicação/IndiretaPai';
 import ComParametro from './components/básicos/ComParametro';
 import FamiliaMembro from "./components/básicos/FamiliaMembro";
 import TabelaProdutos from './components/repetição/TabelaProdutos';
@@ -17,7 +19,15 @@ const App = () => {
         <div className="App">
             <h1>Fundamentos do React</h1>
             <div className="Cards">
-                <Card titulo={'#07 - Renderização Concidional'} color={'#53aa32'}>
+                <Card titulo={'#09 - Comunicação Indireta'} color={'#c231ab'}>
+                    <IndiretaPai />
+                </Card>
+
+                <Card titulo={'#09 - Comunicação Direta'} color={'#52abc3'}>
+                    <DiretaPai />
+                </Card>
+                
+                <Card titulo={'#08 - Renderização Concidional'} color={'#53aa32'}>
                     <ParOuImpar numero={21} />
                     <UsuarioInfo usuario={{ nome: 'Fernando' }} />
                     <UsuarioInfo />
