@@ -1,20 +1,21 @@
+import './TabelaProdutos.css'
 import produtos from "../../data/produtos";
 
 export default (props) => {
     function getLinhas() {
-        return produtos.map(produto => {
+        return produtos.map((produto, id) => {
             return (
-                <tr>
+                <tr key={produto.id} className={id % 2 == 0 ? 'Par' : 'Impar'}>
                     <td>{produto.id}</td>
                     <td>{produto.nome}</td>
-                    <td>{produto.preco}</td>
+                    <td>R$ {produto.preco.toFixed(2).replace('.', ',')}</td>
                 </tr>
             )
         });
     }
 
     return (
-        <div>
+        <div className="TabelaProdutos">
             <table border='1'>
                 <thead>
                     <tr>
@@ -24,9 +25,7 @@ export default (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        {getLinhas}
-                    </tr>
+                    {getLinhas()}
                 </tbody>
             </table>
         </div>
