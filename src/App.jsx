@@ -5,6 +5,8 @@ import Familia from './components/básicos/Familia'
 import Primeiro from './components/básicos/Primeiro';
 import Aleatorio from './components/básicos/Aleatorio';
 import Fragmento from './components/básicos/Fragmento';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 import ListaAlunos from './components/repetição/ListaAlunos';
 import ComParametro from './components/básicos/ComParametro';
 import FamiliaMembro from "./components/básicos/FamiliaMembro";
@@ -15,6 +17,12 @@ const App = () => {
         <div className="App">
             <h1>Fundamentos do React</h1>
             <div className="Cards">
+                <Card titulo={'#07 - Renderização Concidional'} color={'#53aa32'}>
+                    <ParOuImpar numero={21} />
+                    <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+                    <UsuarioInfo />
+                </Card>
+
                 <Card titulo={'#07 - Desafio Repetição'} color={'#534ab2'}>
                     <TabelaProdutos></TabelaProdutos>
                 </Card>
