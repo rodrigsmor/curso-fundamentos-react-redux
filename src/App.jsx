@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 import Card from './components/layout/Card';
-import Familia from './components/básicos/Familia'
+import Input from './components/formulário/Input';
+import Familia from './components/básicos/Familia';
 import Primeiro from './components/básicos/Primeiro';
 import Aleatorio from './components/básicos/Aleatorio';
 import Fragmento from './components/básicos/Fragmento';
@@ -19,7 +20,11 @@ const App = () => {
         <div className="App">
             <h1>Fundamentos do React</h1>
             <div className="Cards">
-                <Card titulo={'#09 - Comunicação Indireta'} color={'#c231ab'}>
+                <Card titulo={'#11 - Componente Controlado'} color={'#ff8000'}>
+                    <Input />
+                </Card>
+
+                <Card titulo={'#10 - Comunicação Indireta'} color={'#c231ab'}>
                     <IndiretaPai />
                 </Card>
 
