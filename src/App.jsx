@@ -4,6 +4,7 @@ import Card from './components/layout/Card';
 import Input from './components/formulário/Input';
 import Familia from './components/básicos/Familia';
 import Primeiro from './components/básicos/Primeiro';
+import Contador from './components/contador/Contador';
 import Aleatorio from './components/básicos/Aleatorio';
 import Fragmento from './components/básicos/Fragmento';
 import DiretaPai from './components/Comunicação/DiretaPai';
@@ -20,6 +21,10 @@ const App = () => {
         <div className="App">
             <h1>Fundamentos do React</h1>
             <div className="Cards">
+                <Card titulo={'#12 - Contador'} color={'#ff2159'}>
+                    <Contador numeroInicial={20}/>
+                </Card>
+
                 <Card titulo={'#11 - Componente Controlado'} color={'#ff8000'}>
                     <Input />
                 </Card>
