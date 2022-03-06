@@ -4,6 +4,7 @@ import Card from './components/layout/Card';
 import Input from './components/formulário/Input';
 import Familia from './components/básicos/Familia';
 import Primeiro from './components/básicos/Primeiro';
+import Megasena from './components/megasena/Megasena';
 import Contador from './components/contador/Contador';
 import Aleatorio from './components/básicos/Aleatorio';
 import Fragmento from './components/básicos/Fragmento';
@@ -21,6 +22,10 @@ const App = () => {
         <div className="App">
             <h1>Fundamentos do React</h1>
             <div className="Cards">
+                <Card titulo={'#13 - Megasena'} color={'#8d2159'}>
+                    <Megasena quantidade={8} />
+                </Card>
+
                 <Card titulo={'#12 - Contador'} color={'#ff2159'}>
                     <Contador numeroInicial={20}/>
                 </Card>
